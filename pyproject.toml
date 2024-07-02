@@ -1,0 +1,21 @@
+[project]
+name = "cf-dyndns"
+dynamic = ["version"]
+description = "Dynamic DNS client for Cloudflare"
+readme = "README.md"
+dependencies = ["requests", "python-dotenv"]
+license = {file = "LICENSE"}
+
+[project.scripts]
+cf-dyndns = "cf_dyndns:main"
+
+[project.urls]
+Homepage = "https://github.com/rael-san/cf-dyndns"
+Repository = "https://github.com/rael-san/cf-dyndns"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "cf_dyndns/__init__.py"
