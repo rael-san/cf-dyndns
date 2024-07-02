@@ -3,7 +3,7 @@ name = "cf-dyndns"
 dynamic = ["version"]
 description = "Dynamic DNS client for Cloudflare"
 readme = "README.md"
-dependencies = ["requests", "python-dotenv"]
+dependencies = ["requests", "pyyaml"]
 license = {file = "LICENSE"}
 
 [project.scripts]

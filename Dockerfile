@@ -7,4 +7,5 @@ COPY . /cf-dyndns
 WORKDIR /cf-dyndns
 RUN pip install .
 
-CMD ["cf-dyndns"]
+WORKDIR /configs
+CMD ["cf-dyndns", "-c", "config.yml"]
